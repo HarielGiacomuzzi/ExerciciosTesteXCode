@@ -17,6 +17,13 @@
 		DB2837321C84C77100694791 /* ExerciciosTesteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2837311C84C77100694791 /* ExerciciosTesteUITests.swift */; };
 		DB2837571C84C7D300694791 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB28374A1C84C7B700694791 /* Alamofire.framework */; };
 		DB2837581C84C7D300694791 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DB28374A1C84C7B700694791 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DB28375D1C85F4B900694791 /* ViewControllerUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB28375C1C85F4B900694791 /* ViewControllerUser.swift */; };
+		DB28375F1C85F4C600694791 /* ViewControllerPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB28375E1C85F4C600694791 /* ViewControllerPokemon.swift */; };
+		DB2837611C85F6FA00694791 /* CellPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2837601C85F6FA00694791 /* CellPokemon.swift */; };
+		DB2837631C85F70800694791 /* CellSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2837621C85F70800694791 /* CellSkill.swift */; };
+		DB2837651C85F9C800694791 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2837641C85F9C800694791 /* ConnectionManager.swift */; };
+		DB2837671C85FB5A00694791 /* ConnectionManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2837661C85FB5A00694791 /* ConnectionManagerTest.swift */; };
+		DB2837691C8751B000694791 /* UserViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2837681C8751B000694791 /* UserViewUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +129,13 @@
 		DB2837311C84C77100694791 /* ExerciciosTesteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciciosTesteUITests.swift; sourceTree = "<group>"; };
 		DB2837331C84C77100694791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB28373F1C84C7B700694791 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		DB28375C1C85F4B900694791 /* ViewControllerUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUser.swift; sourceTree = "<group>"; };
+		DB28375E1C85F4C600694791 /* ViewControllerPokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPokemon.swift; sourceTree = "<group>"; };
+		DB2837601C85F6FA00694791 /* CellPokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellPokemon.swift; sourceTree = "<group>"; };
+		DB2837621C85F70800694791 /* CellSkill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSkill.swift; sourceTree = "<group>"; };
+		DB2837641C85F9C800694791 /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		DB2837661C85FB5A00694791 /* ConnectionManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManagerTest.swift; sourceTree = "<group>"; };
+		DB2837681C8751B000694791 /* UserViewUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +195,11 @@
 				DB28371A1C84C77100694791 /* LaunchScreen.storyboard */,
 				DB28371D1C84C77100694791 /* Info.plist */,
 				DB2837151C84C77100694791 /* ExerciciosTeste.xcdatamodeld */,
+				DB28375C1C85F4B900694791 /* ViewControllerUser.swift */,
+				DB28375E1C85F4C600694791 /* ViewControllerPokemon.swift */,
+				DB2837601C85F6FA00694791 /* CellPokemon.swift */,
+				DB2837621C85F70800694791 /* CellSkill.swift */,
+				DB2837641C85F9C800694791 /* ConnectionManager.swift */,
 			);
 			path = ExerciciosTeste;
 			sourceTree = "<group>";
@@ -190,6 +209,7 @@
 			children = (
 				DB2837261C84C77100694791 /* ExerciciosTesteTests.swift */,
 				DB2837281C84C77100694791 /* Info.plist */,
+				DB2837661C85FB5A00694791 /* ConnectionManagerTest.swift */,
 			);
 			path = ExerciciosTesteTests;
 			sourceTree = "<group>";
@@ -199,6 +219,7 @@
 			children = (
 				DB2837311C84C77100694791 /* ExerciciosTesteUITests.swift */,
 				DB2837331C84C77100694791 /* Info.plist */,
+				DB2837681C8751B000694791 /* UserViewUITests.swift */,
 			);
 			path = ExerciciosTesteUITests;
 			sourceTree = "<group>";
@@ -411,7 +432,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB28375F1C85F4C600694791 /* ViewControllerPokemon.swift in Sources */,
+				DB2837631C85F70800694791 /* CellSkill.swift in Sources */,
+				DB2837611C85F6FA00694791 /* CellPokemon.swift in Sources */,
 				DB2837111C84C77100694791 /* ViewController.swift in Sources */,
+				DB28375D1C85F4B900694791 /* ViewControllerUser.swift in Sources */,
+				DB2837651C85F9C800694791 /* ConnectionManager.swift in Sources */,
 				DB2837171C84C77100694791 /* ExerciciosTeste.xcdatamodeld in Sources */,
 				DB28370F1C84C77100694791 /* AppDelegate.swift in Sources */,
 			);
@@ -422,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB2837271C84C77100694791 /* ExerciciosTesteTests.swift in Sources */,
+				DB2837671C85FB5A00694791 /* ConnectionManagerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB2837321C84C77100694791 /* ExerciciosTesteUITests.swift in Sources */,
+				DB2837691C8751B000694791 /* UserViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,6 +673,7 @@
 				DB2837381C84C77100694791 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB2837391C84C77100694791 /* Build configuration list for PBXNativeTarget "ExerciciosTesteTests" */ = {
 			isa = XCConfigurationList;
@@ -653,6 +682,7 @@
 				DB28373B1C84C77100694791 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB28373C1C84C77100694791 /* Build configuration list for PBXNativeTarget "ExerciciosTesteUITests" */ = {
 			isa = XCConfigurationList;
@@ -661,6 +691,7 @@
 				DB28373E1C84C77100694791 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

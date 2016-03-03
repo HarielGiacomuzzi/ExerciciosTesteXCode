@@ -10,16 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var userNameText: UITextField!
+    @IBOutlet weak var passwordText: UITextField!
+
+    @IBAction func doLoginBTN(sender: AnyObject) {
+        ConnectionManager.Connection.login(self.userNameText.text!, Password: self.passwordText.text!, Completion: {result in
+            if result{
+                self.performSegueWithIdentifier("gotoUserPage", sender: nil)
+                return
+            }
+            self.userNameText.backgroundColor = UIColor.redColor()
+            self.passwordText.backgroundColor = UIColor.redColor()
+        })
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
     }
-
-
 }
 
