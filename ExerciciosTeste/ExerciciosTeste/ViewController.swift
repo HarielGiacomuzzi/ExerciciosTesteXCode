@@ -23,9 +23,5 @@ class ViewController: UIViewController {
             self.passwordText.backgroundColor = UIColor.redColor()
         })
     }
-    
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        self.view.endEditing(true)
-    }
 }
 

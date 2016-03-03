@@ -28,9 +28,20 @@ class ExerciciosTesteUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testLogin(){
+        
+        let app = XCUIApplication()
+        let userTextField = app.textFields["User"]
+        userTextField.tap()
+        userTextField.typeText("ash")
+        
+        let passwordSecureTextField = app.secureTextFields["Password"]
+        passwordSecureTextField.tap()
+        passwordSecureTextField.typeText("mistyS2")
+        app.buttons["Catch 'Em All"].tap()
+        app.tables.staticTexts["Bulbasaur"].tap()
+        app.navigationBars["ExerciciosTeste.View"].childrenMatchingType(.Button).matchingIdentifier("Back").elementBoundByIndex(0).tap()
+        
     }
     
 }
